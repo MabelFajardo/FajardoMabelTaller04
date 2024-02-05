@@ -1,0 +1,90 @@
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.adentro {
+  background-color: rgb(222, 220, 252);
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: left;
+}
+
+.btn {
+  background-color: #2b6dc2;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+
+}
+
+.btn:hover {
+  background-color: #013874;
+}
+
+.modal {
+  position: fixed;
+  width: 34%;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-body {
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.result{
+  font-size: 16px;
+
+}

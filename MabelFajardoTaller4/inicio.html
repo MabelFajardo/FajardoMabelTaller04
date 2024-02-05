@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de sueldo</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="icon" href="./img/signo_pesos.png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de sueldo</h1>
+        <div class="contenido">
+            <P>Este algoritmo calcula el sueldo de un empleado.
+                Por favor completar los campos requeridos (Nombre, horas trabajas y el valor del pago por hora).
+            </P>
+        </div>
+        <form id="form">
+            <div class="form-group">
+                <label for="nom">Digite el nombre del empleado:</label>
+                <input type="text" id="nom" name="nom" required
+                    oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g,'');">
+            </div>
+            <div class="form-group">
+                <label for="hora">Digite las horas trabajadas:</label>
+                <input type="number" id="hora" name="hora" min="0" required="">
+            </div>
+            <div class="form-group">
+                <label for="valor">Digite el valor del pago por hora:</label>
+                <input type="number" id="valor" name="valor" min="0" required="">
+            </div>
+            <button type="submit" class="btn">Calcular Sueldo</button>
+            <button type="button" class="btn" id="borrar">Borrar todo</button>
+        </form>
+        <div id="my-modal" class="modal">
+
+            <div class="modal-body">
+                <div class="result" id="result"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" id="close-modal-btn-2">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./ejercicio1.js"></script>
+</body>
+
+</html>
